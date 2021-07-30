@@ -1,5 +1,5 @@
 var PKTFactory = artifacts.require("./PKTFactory.sol");
 
-module.exports = function(deployer,network,accounts) {
+module.exports =async function(deployer,network,accounts) {
   await deployer.deploy(PKTFactory);
 };

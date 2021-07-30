@@ -17,12 +17,19 @@ class App extends Component {
       const accounts = await web3.eth.getAccounts();
 
       // Get the contract instance.
+      let instance;
       const networkId = await web3.eth.net.getId();
       const deployedNetwork = PKTFactory.networks[networkId];
-      const instance = new web3.eth.Contract(
-        PKTFactory.abi,
-        deployedNetwork && deployedNetwork.address,
-      );
+      if(networkId == 3){
+        instance = new web3.eth.Contract(PKTFactory.abi,deployedNetwork.address)
+        console.log(instance)
+      }else if(networkId == 5777){
+        instance = new web3.eth.Contract(
+       PKTFactory.abi,
+       deployedNetwork && deployedNetwork.address,
+     );
+      }
+      
 
       // Set web3, accounts, and contract to the state, and then proceed with an
       // example of interacting with the contract's methods.

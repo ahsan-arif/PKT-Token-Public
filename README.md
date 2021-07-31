@@ -1,5 +1,5 @@
 # PKT-Token-Public
-Defi Application to Pool and Swap your newly created Token usin Uniswap IFrame.
+Defi Application to Pool and Swap your newly created Token using Uniswap IFrame.
 
 ![img1](https://user-images.githubusercontent.com/42770742/127746043-aaf4dcd2-b8cf-4588-9283-c60d51b2904b.PNG)
 ![img2](https://user-images.githubusercontent.com/42770742/127746046-9491ab88-de65-4e07-b28d-9a629ccada6b.PNG)
